@@ -1,0 +1,62 @@
+.dialog-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0,0,0,.5);
+    z-index: 9;
+}
+
+.dialog-wrapper .dialog{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.dialog-wrapper .dialog .dialog-frame{
+    min-width: 300px;
+    background: #fff;
+    box-shadow: 0 1px 10px 1px rgba(0,0,0,.8);
+    border-radius: 5px;
+    color: #333;
+}
+
+.dialog-wrapper .dialog .dialog-frame > *{
+    padding: 0 15px;
+}
+
+.dialog-wrapper .dialog .dialog-frame > .top{
+    padding: 5px 15px;
+    font-weight: bold;
+}
+
+.dialog-closer{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    cursor: pointer;
+    opacity: .7;
+}
+
+.dialog-closer:hover{
+    opacity: 1;
+}
+
+.dialog-wrapper .dialog .dialog-frame > .default-dialog-footer {
+    text-align: right;
+    padding: 0 15px 5px;
+    font-size: 12px;
+}
+
+.dialog-wrapper .dialog .dialog-frame > .default-dialog-footer .link{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.dialog-wrapper .dialog .dialog-frame > .default-dialog-body{
+    padding: 15px;
+}

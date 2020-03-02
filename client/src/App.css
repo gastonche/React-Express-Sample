@@ -1,0 +1,218 @@
+@import url(//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css);
+
+.button {
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+  font-size: 14px;
+  vertical-align: middle;
+  white-space: nowrap;
+  outline: 0;
+  cursor: pointer;
+  transition: all 0.1s linear;
+  width: fit-content !important;
+}
+.button:disabled, .button:disabled:hover {
+  cursor: not-allowed;
+}
+.button.large {
+  height: 34px;
+  border-radius: 18px;
+  padding: 0 15px;
+}
+.button.small {
+  height: 27px;
+  border-radius: 14px;
+  padding: 0 10px;
+}
+.button.dark {
+  border: 1px solid #263238;
+}
+.button.dark:disabled, .button.dark:disabled:hover {
+  background: #3c464c;
+  border-color: #3c464c;
+  color: #637078;
+}
+.button.dark:not(.main) {
+  background: #263238;
+  color: #b0bec5;
+}
+.button.dark:not(.main):hover {
+  color: white;
+}
+.button.dark.main {
+  background: #00a99d;
+  color: white;
+  border: none;
+}
+.button.dark.main:hover {
+  background: #00b8ab;
+  border-color: #00b8ab;
+  color: white;
+}
+.button.light:disabled, .button.light:disabled:hover {
+  background: #eceff1;
+  border-color: #cfd8dc;
+  color: #b0bec5;
+}
+.button.light:not(.main) {
+  background: linear-gradient(0deg, #f5f6f7 10%, white 11.05%, white 100%);
+  border: 1px solid #dcdee0;
+  color: #546e7a;
+}
+.button.light:not(.main):hover {
+  background: white;
+  color: #455a64;
+}
+.button.light.main {
+  background: #00b8ab;
+  border: 1px solid #00a99d;
+  color: white;
+}
+.button.light.main:hover {
+  background: #00a99d;
+  border-color: #00a99d;
+  color: white;
+}
+.button[data-icon] {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 0;
+}
+.button[data-icon]:before {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+ /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  content: attr(data-icon);
+  text-align: center;
+}
+.button[data-icon].large:before {
+  width: 40px;
+}
+.button[data-icon].small:before {
+  font-size: 18px;
+  width: 30px;
+}
+.button[data-icon].icon-only {
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+}
+.button[data-icon].icon-only.small {
+  height: 30px;
+  width: 30px;
+}
+.button:disabled {
+  opacity: 0.4;
+}
+
+.button + .button{
+  margin-left: 5px;
+}
+
+.button.full{
+  width: 100%;
+}
+
+.nav{
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  border-radius: 1px;
+  font-size: large;
+}
+
+.nav h3{
+  font-size: 35px;
+  margin: 0;
+}
+
+.nav .items{
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  min-width: 50%;
+  justify-content: flex-end;
+}
+
+.nav .items li{
+  margin: 0 5px;
+  cursor: pointer;
+  color: #3f3d55;
+}
+
+.box{
+  padding: 10px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.box .material-icons{
+  padding: 10px;
+  border-radius: 40px;
+  margin-right: 10px;
+}
+
+.box.info {
+  color: #fff;
+  border: 1px solid #0368ff;
+  background: #028aff;
+}
+
+.box.info .material-icons{
+  background: rgba(255, 255, 255, .4);
+}
+
+form label{
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+form label input{
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,.1);
+}
+
+form label.checkbox{
+  flex-direction: row;
+  align-items: center;;
+}
+
+form label.checkbox input{
+  margin-left: 10px;
+}
+
+.App{
+  background-color: #ffffff;
+  background-image: url(/bg.svg);
+  background-attachment: fixed;
+  background-size: 750px;
+  height: 90vh;
+  width: 90vw;
+  margin: calc(10vh/2) auto;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px 0px black;
+}
