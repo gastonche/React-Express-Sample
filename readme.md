@@ -16,6 +16,7 @@ This is a guide to help you setup the project properly on your local environment
 5. ```cd ../server```
 6. ```npm install```
 7. ```cd ..```
+8. ```npm install```
 8. ```npm start```
 
 ## About the implementation
